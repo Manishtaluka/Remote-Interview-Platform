@@ -1,21 +1,18 @@
 import './App.css'
-import { Show, SignInButton,  UserButton } from '@clerk/react'
+import { Show, SignInButton, SignUpButton, UserButton } from '@clerk/react'
 
 function App() {
   return (
     <>
-    <h1>WELCOME TO THE M'S APP</h1>
       <header>
-        <SignedOut>
-          <SignInButton mode="modal">
-          <button>Login</button>
-
-          </SignInButton>
-          
-         </SignedOut>
-        <SignedIn>
+      <h1>Welcome to M's App</h1>
+        <Show when="signed-out">
+          <SignInButton />
+          <SignUpButton />
+        </Show>
+        <Show when="signed-in">
           <UserButton />
-        </SignedIn>
+        </Show>
       </header>
     </>
   )
