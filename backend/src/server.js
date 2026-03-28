@@ -30,7 +30,7 @@ const startServer=async ()=>{
         
 
     }catch(error){
-        console.error("Error starting the Server:",error);
+        console.error("❌ Error starting the Server:",error);
         process.exit(1);
 
     }
