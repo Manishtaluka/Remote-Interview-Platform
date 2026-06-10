@@ -1,10 +1,11 @@
 import {Navigate,Route, Routes} from 'react-router'
-import {SignInButton, SignOutButton, UserButton,useUser } from '@clerk/clerk-react'
+import { useUser } from "@clerk/clerk-react";
 import HomePage from './pages/HomePage'
 import {Toaster} from "react-hot-toast"
 import ProblemsPage from './pages/ProblemsPage'
 import DashboardPage from './pages/DashboardPage'
 import ProblemPage from './pages/ProblemPage'
+
 function App() {
   const {isSignedIn,isLoaded} = useUser();
   if(!isLoaded) return null;//this will get rid of flickering effect
