@@ -1,6 +1,5 @@
 # ✨ Remote Interview Platform ✨
 
-![Demo App](./frontend/public/screenshot-for-readme.png)
 
 A real-time, full-stack interview platform built for seamless 1-on-1 technical interviews — featuring live video, collaborative coding, and instant session management.
 
